@@ -1,3 +1,8 @@
+/**
+ * GlowCard — Card with mouse-follow glow (CSS var --start). Expects card.review;
+ * children render below (e.g. avatar + name in Testimonials, or image in Experience).
+ * Used in Experience and Testimonials sections.
+ */
 import { useRef } from "react";
 
 const GlowCard = ({ card, index, children }) => {

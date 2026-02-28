@@ -1,3 +1,7 @@
+/**
+ * TitleHeader — Reusable section heading: optional badge (sub) and main title.
+ * Used by Experience, TechStack, Testimonials, Contact.
+ */
 const TitleHeader = ({ title, sub }) => {
   return (
     <div className="flex flex-col items-center gap-5">

@@ -1,3 +1,7 @@
+/**
+ * Footer — Three columns: Terms & Conditions, social icons (from socialImgs), and copyright.
+ * Year is dynamic via new Date().getFullYear().
+ */
 import { socialImgs } from "../constants";
 
 const Footer = () => {

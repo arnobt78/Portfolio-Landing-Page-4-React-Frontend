@@ -1,3 +1,4 @@
+/** Navigation items for NavBar; link targets are section IDs (anchor links). */
 const navLinks = [
   {
     name: "Work",
@@ -17,6 +18,7 @@ const navLinks = [
   },
 ];
 
+/** Hero rotating words (Ideas, Concepts, Designs, Code) with icon paths; duplicated for infinite scroll effect. */
 const words = [
   { text: "Ideas", imgPath: "/images/ideas.svg" },
   { text: "Concepts", imgPath: "/images/concepts.svg" },
@@ -28,6 +30,7 @@ const words = [
   { text: "Code", imgPath: "/images/code.svg" },
 ];
 
+/** Stats shown in AnimatedCounter: value, suffix (e.g. "+", "%"), and label. */
 const counterItems = [
   { value: 15, suffix: "+", label: "Years of Experience" },
   { value: 200, suffix: "+", label: "Satisfied Clients" },
@@ -35,6 +38,7 @@ const counterItems = [
   { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
+/** Logo URLs for LogoShowcase marquee (company/client logos). */
 const logoIconsList = [
   {
     imgPath: "/images/logos/company-logo-1.png",
@@ -89,6 +93,7 @@ const abilities = [
   },
 ];
 
+/** Tech stack entries for image-based cards (optional; TechStack uses techStackIcons with 3D). */
 const techStackImgs = [
   {
     name: "React Developer",
@@ -112,6 +117,7 @@ const techStackImgs = [
   },
 ];
 
+/** Tech stack for 3D cards: name, GLB modelPath, scale, rotation [x,y,z] for TechIconCardExperience. */
 const techStackIcons = [
   {
     name: "React Developer",
@@ -145,6 +151,7 @@ const techStackIcons = [
   },
 ];
 
+/** Experience timeline entries: review quote, image, logo, title, date, responsibilities[]. Used in Experience + GlowCard. */
 const expCards = [
   {
     review:
@@ -187,6 +194,7 @@ const expCards = [
   },
 ];
 
+/** Logo images for experience timeline (e.g. company logos). */
 const expLogos = [
   {
     name: "logo1",
@@ -202,6 +210,7 @@ const expLogos = [
   },
 ];
 
+/** Testimonials for GlowCard: name, mentions (e.g. @handle), review text, imgPath (avatar). */
 const testimonials = [
   {
     name: "Esther Howard",
@@ -247,6 +256,7 @@ const testimonials = [
   },
 ];
 
+/** Footer social icons: name and imgPath for each platform (e.g. insta, fb, x, linkedin). */
 const socialImgs = [
   {
     name: "insta",

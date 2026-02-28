@@ -1,3 +1,8 @@
+/**
+ * Experience (id="experience") — Timeline of roles from expCards. Each row: GlowCard (review + image)
+ * plus timeline line, logo, title, date, responsibilities. GSAP: cards slide in from left,
+ * timeline scaleY shrinks on scroll, expText blocks fade in.
+ */
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

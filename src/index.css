@@ -1,3 +1,4 @@
+/* Global styles: Mona Sans font, Tailwind 4, custom theme and utility/components (grids, hero, navbar, cards). */
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 @import "tailwindcss";
 
@@ -19,6 +20,7 @@ section {
   width: 100dvw;
 }
 
+/* Tailwind 4 theme: custom font and palette (white-50, black-50, blue-50, etc.) used across the app */
 @theme {
   --font-sans: "Mona Sans", sans-serif;
   --color-white-50: #d9ecff;

@@ -1,3 +1,8 @@
+/**
+ * TechStack (id="skills") — Section title + grid of 3D tech cards. Each card uses
+ * TechIconCardExperience with GLB model from techStackIcons. GSAP: cards animate in
+ * with stagger when section enters view. Optional techStackImgs block is commented for image-only cards.
+ */
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 

@@ -1,3 +1,7 @@
+/**
+ * ExpContent — Displays one experience block: title, date, responsibilities list.
+ * Expects expContent: { title, date, responsibilities[] }. Can be used standalone or inside a card.
+ */
 const ExpContent = ({ expContent }) => {
   return (
     <div className="card-border rounded-xl p-10">

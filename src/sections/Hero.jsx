@@ -1,3 +1,8 @@
+/**
+ * Hero — Top section: headline with rotating words (from constants), intro text,
+ * CTA button (scrolls to #counter), 3D HeroExperience, and AnimatedCounter stats.
+ * useGSAP runs once on mount to animate .hero-text h1 lines (staggered fade-in from below).
+ */
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -7,6 +12,7 @@ import { words } from "../constants";
 import HeroExperience from "../components/models/hero_models/HeroExperience";
 
 const Hero = () => {
+  // Entrance animation: headline lines slide up and fade in with stagger
   useGSAP(() => {
     gsap.fromTo(
       ".hero-text h1",

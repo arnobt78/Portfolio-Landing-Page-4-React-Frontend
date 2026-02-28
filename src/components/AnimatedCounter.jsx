@@ -1,3 +1,8 @@
+/**
+ * AnimatedCounter — Renders stats from counterItems (value, suffix, label).
+ * GSAP animates each number from 0 to value when #counter enters view (ScrollTrigger);
+ * onComplete appends suffix (e.g. "+", "%").
+ */
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";

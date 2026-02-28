@@ -1,3 +1,7 @@
+/**
+ * NavBar — Sticky header with logo, nav links (from constants), and Contact CTA.
+ * Uses scroll state to toggle .scrolled for styling (e.g. background) when user scrolls past 10px.
+ */
 import { useState, useEffect } from "react";
 
 import { navLinks } from "../constants";

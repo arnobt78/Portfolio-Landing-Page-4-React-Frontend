@@ -1,3 +1,7 @@
+/**
+ * Testimonials (id="testimonials") — TitleHeader + masonry grid (columns-1/2/3) of GlowCards.
+ * Each card shows testimonial.review and children: avatar, name, mentions.
+ */
 import { testimonials } from "../constants";
 import TitleHeader from "../components/TitleHeader";
 import GlowCard from "../components/GlowCard";

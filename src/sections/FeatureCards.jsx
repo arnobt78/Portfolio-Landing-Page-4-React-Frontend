@@ -1,3 +1,7 @@
+/**
+ * FeatureCards — Three cards from constants.abilities: icon, title, description.
+ * Renders in a responsive grid (grid-3-cols).
+ */
 import { abilities } from "../constants";
 
 const FeatureCards = () => (

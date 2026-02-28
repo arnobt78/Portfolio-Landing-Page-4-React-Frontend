@@ -1,3 +1,9 @@
+/**
+ * App.jsx — Root component. Renders the single-page portfolio in order:
+ * NavBar (sticky), Hero, Work showcase, Logo marquee, Feature cards,
+ * Experience timeline, Tech stack (3D), Testimonials, Contact form, Footer.
+ * All "routes" are anchor links (#hero, #work, #experience, etc.).
+ */
 import Testimonials from "./sections/Testimonials";
 import Footer from "./sections/Footer";
 import Contact from "./sections/Contact";

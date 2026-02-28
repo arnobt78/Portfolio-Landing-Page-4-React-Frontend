@@ -1,3 +1,7 @@
+/**
+ * TechIconCardExperience — One 3D card per tech: loads GLB from model.modelPath, Float animation,
+ * Environment (reflections). For "Interactive Developer" we override one mesh material to white in useEffect.
+ */
 import { Environment, Float, OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useEffect } from "react";
@@ -6,6 +10,7 @@ import * as THREE from "three";
 const TechIconCardExperience = ({ model }) => {
   const scene = useGLTF(model.modelPath);
 
+  // Special case: make one mesh white for better visibility on dark card background
   useEffect(() => {
     if (model.name === "Interactive Developer") {
       scene.scene.traverse((child) => {
@@ -16,7 +21,7 @@ const TechIconCardExperience = ({ model }) => {
         }
       });
     }
-  }, [scene]);
+  }, [scene, model.name]);
 
   return (
     <Canvas>

@@ -1,3 +1,8 @@
+/**
+ * Contact — Section with TitleHeader, form (name, email, message), and 3D ContactExperience.
+ * Form submit uses EmailJS (sendForm) with env: VITE_APP_EMAILJS_SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY.
+ * Controlled inputs; loading state during send; form reset on success; errors logged to console.
+ */
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -18,6 +23,7 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
+  /** Sends form via EmailJS; formRef.current must match the form element (name/email/message). */
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true); // Show loading state

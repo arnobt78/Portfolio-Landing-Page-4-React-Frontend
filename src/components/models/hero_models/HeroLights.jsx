@@ -1,3 +1,7 @@
+/**
+ * HeroLights — Lighting setup for Hero 3D: spotlights (white, blue, purple), RectAreaLight,
+ * point lights. Tuned for moody hero scene.
+ */
 import * as THREE from "three";
 
 const HeroLights = () => (

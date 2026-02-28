@@ -1,3 +1,7 @@
+/**
+ * ContactExperience — 3D scene for Contact section: warm lighting, ground plane (receiveShadow),
+ * and scaled Computer GLB model. OrbitControls allow rotation; zoom disabled. Used inside Contact.jsx.
+ */
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 

@@ -1,3 +1,7 @@
+/**
+ * HeroExperience — Hero 3D scene: Room GLB, HeroLights, Particles. Responsive scale (mobile 0.7)
+ * and OrbitControls (zoom off on tablet). Suspense wraps async assets (Room, etc.).
+ */
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";

@@ -1,3 +1,7 @@
+/**
+ * Particles — Falling particles in hero scene. useMemo builds initial positions/speeds;
+ * useFrame updates Y each frame and wraps below -2 back to top for continuous fall.
+ */
 import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 

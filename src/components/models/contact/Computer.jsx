@@ -1,3 +1,7 @@
+/**
+ * Computer — GLB model (desk + floppy) loaded via useGLTF. Preloaded at bottom for faster display.
+ * Receives props (e.g. position/scale from parent); dispose={null} keeps geometry in cache.
+ */
 import { useGLTF } from "@react-three/drei";
 
 export function Computer(props) {

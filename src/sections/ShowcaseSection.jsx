@@ -1,3 +1,7 @@
+/**
+ * ShowcaseSection (id="work") — Project showcase: one featured project + two smaller cards.
+ * GSAP: section fades in; each project card animates in from below on scroll (ScrollTrigger).
+ */
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

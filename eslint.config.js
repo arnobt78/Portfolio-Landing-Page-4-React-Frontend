@@ -1,3 +1,4 @@
+// ESLint flat config: recommended JS, React hooks, react-refresh. Applies to .js/.jsx; ignores dist. no-unused-vars allows names starting with uppercase; react-refresh warns on non-component exports.
 import js from '@eslint/js'
 import globals from 'globals'
 import reactHooks from 'eslint-plugin-react-hooks'

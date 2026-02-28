@@ -1,5 +1,11 @@
+/**
+ * LogoShowcase — Horizontal marquee of company/client logos from logoIconsList.
+ * LogoIcon renders one logo; list is duplicated in marquee-box for seamless loop effect.
+ * gradient-edge divs create fade on sides.
+ */
 import { logoIconsList } from "../constants";
 
+/** Single logo item in the marquee; expects icon: { imgPath }. */
 const LogoIcon = ({ icon }) => {
   return (
     <div className="flex-none flex-center marquee-item">
