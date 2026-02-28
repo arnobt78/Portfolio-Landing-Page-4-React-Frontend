@@ -6,6 +6,7 @@ Command: npx gltfjsx@6.5.3 optimized-room.glb
 /**
  * Room — GLB scene (furniture, monitors, etc.). Custom materials for curtain, body, table, etc.
  * SelectiveBloom (postprocessing) applies bloom to screensRef meshes for glow effect.
+ * SelectiveBloom requires a `lights` prop (array of light refs) to work; we pass a point light that illuminates the scene.
  */
 import React, { useRef } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
@@ -16,6 +17,7 @@ import * as THREE from "three";
 export function Room(props) {
   const { nodes, materials } = useGLTF("/models/optimized-room.glb");
   const screensRef = useRef();
+  const bloomLightRef = useRef();
   const matcapTexture = useTexture("/images/textures/mat1.png");
 
   const curtainMaterial = new THREE.MeshPhongMaterial({
@@ -48,8 +50,11 @@ export function Room(props) {
 
   return (
     <group {...props} dispose={null}>
+      {/* Light required by SelectiveBloom; also helps illuminate the screen mesh for bloom. */}
+      <pointLight ref={bloomLightRef} position={[0, 2, 2]} intensity={1} color="#ffffff" />
       <EffectComposer>
         <SelectiveBloom
+          lights={[bloomLightRef]}
           selection={screensRef}
           intensity={1.5} // Strength of the bloom
           luminanceThreshold={0.2} // Minimum luminance needed
