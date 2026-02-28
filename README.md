@@ -10,7 +10,6 @@
 A modern, single-page portfolio built with **React**, **Vite**, and **Tailwind CSS**. It showcases a developer profile with a hero section, project highlights, experience timeline, tech stack (including 3D visuals via Three.js), testimonials, and a contact form powered by EmailJS. The project is ideal for learning React patterns, GSAP animations, and React Three Fiber.
 
 - **Live Demo:** [https://portfolio-ui-4.vercel.app/](https://portfolio-ui-4.vercel.app/)
-- **Preview:** ![Portfolio Preview](https://portfolio-ui-4.vercel.app/images/logo.svg)
 
 ---
 
